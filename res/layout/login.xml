@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+	android:id="@+id/settings"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:scrollbars="none"
+    android:background="#FFF5F5F5">
+    
+        <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="fill_parent" 
+                android:layout_height="wrap_content"
+                android:paddingLeft="10dip"
+                android:paddingRight="10dip"
+                android:paddingBottom="10dip"
+				android:background="#FFF5F5F5">
+			<ImageView android:id="@+id/logo"
+			     android:layout_width="fill_parent" 
+			     android:layout_height="wrap_content"
+			     android:gravity="left"
+			     android:paddingLeft="20dip"
+			     android:paddingRight="20dip"
+			     android:src="@drawable/icon"
+			     android:scaleType="centerInside">
+			</ImageView>
+			<RelativeLayout android:layout_width="fill_parent" 
+    			android:layout_below="@+id/logo"
+                android:layout_height="fill_parent"
+                android:id="@+id/section1"> 
+				<TextView android:id="@+id/l_section1" 
+	              android:layout_width="fill_parent" 
+	              android:layout_height="wrap_content"
+	              android:text="Sign In"
+	              style="@style/SectionHeader"/>  
+              	<RelativeLayout android:layout_width="wrap_content" 
+	    			android:layout_below="@id/l_section1"
+	                android:layout_height="wrap_content"
+	                android:id="@+id/urlWrapper"> 
+	                <TextView android:id="@+id/l_email" 
+	                	android:textColor="#444444"
+			            android:layout_width="fill_parent" 
+			            android:layout_height="wrap_content" 
+			            android:text="Email:"
+			            android:layout_below="@id/urlWrapper"/>
+					<EditText android:id="@+id/email"
+						android:singleLine="true"
+						android:layout_width="fill_parent"
+						android:layout_height="wrap_content"
+					    android:minHeight="40dip"
+		                android:background="@android:drawable/editbox_background"
+		                android:layout_below="@+id/l_email"/>
+		        </RelativeLayout>
+				<TextView android:id="@+id/l_password"
+					android:textColor="#444444" 
+	        	    android:layout_marginTop="10dip"	
+	                android:layout_width="fill_parent" 
+	                android:layout_height="wrap_content" 
+	                android:text="Password:"
+	                android:layout_below="@id/urlWrapper"/>
+				<EditText
+					android:id="@+id/password"
+					android:password="true"
+					android:singleLine="true"
+					android:layout_width="fill_parent" 
+	                android:layout_height="wrap_content"
+	                android:minHeight="40dip" 
+	                android:background="@android:drawable/editbox_background"
+	                android:layout_below="@+id/l_password"/> 
+	           		
+	           	<Button android:id="@+id/login_button"
+		            android:layout_width="wrap_content"  
+		            android:layout_height="wrap_content"
+		            android:layout_below="@+id/password"
+		            android:layout_alignParentRight="true"
+		            android:layout_marginLeft="10dip"
+		            android:text="Sign in"
+		            android:shadowColor="#FFFFFF"
+		            android:shadowDx="0"
+		            android:shadowDy="1"
+		            android:shadowRadius="1"
+		            android:background="@drawable/button_small" />
+
+				<Button android:id="@+id/cancel_button" 
+		     		android:layout_width="wrap_content"  
+		            android:layout_height="wrap_content"
+		            android:layout_alignTop="@+id/login_button"
+		            android:layout_toLeftOf="@+id/login_button"
+		            android:text="Cancel"
+		            android:background="@drawable/button_small" />
+		    </RelativeLayout>
+			    
+			<TextView android:id="@+id/l_section2"
+	      		android:textColor="#444444"
+	      		android:shadowColor="#FFFFFF"
+	      		android:shadowDx="0"
+	      		android:shadowDy="1"
+	      		android:shadowRadius="1" 
+	      		android:layout_centerHorizontal="true"
+	            android:layout_marginTop="24dip" 
+	            android:layout_width="wrap_content" 
+	            android:layout_height="wrap_content" 
+	            android:text="Don't yet have an account?"
+	            android:layout_below="@id/section1"/>
+			<Button android:id="@+id/signup_button"
+				android:layout_width="wrap_content" 
+	            android:layout_height="wrap_content"
+	     		android:text="Create an account"
+	            android:layout_centerHorizontal="true"
+	            android:layout_below="@+id/l_section2"
+	            android:background="@drawable/button"/>
+		</RelativeLayout>
+</ScrollView>

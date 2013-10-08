@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="hello">Go Irish! Be Green!</string>
+    <string name="app_name">GreenDrive</string>
+    <string name="daily">Daily History</string>
+    <string name="weekly">Weekly History</string>
+    <string name="monthly">Monthly History</string>
+    <string name="begreen">Go Green!</string>
+    <string name="contact">Feel free to contact us if you have any question: sliu6@nd.edu, wzhang7@nd.edu</string>
+    <string name="gas">From the first time you use this app, you have already produced the following carbon footprint (ton)： </string>
+    <string name="tree">For compensation, the following number of money is needed to planting trees: </string> 
+    <string name="totalgas">When you drive a car, the engine burns fuel which creates a certain amount of CO2, depending on its fuel consumption and the driving distance. According to your input of fuel consumption and the recording data, we first calculate the total distance and then your carbon footprint by driving car. </string>
+    <string name="gasnum">0.1</string>
+    <string name="totaltree">Planting trees is a great way to offset your carbon footprint and become carbon neutral. Through photosynthesis trees absorb carbon dioxide to produce oxygen and wood. Each tree planted is anticipated to offset your environmental impact by ‘breathing’ in around 1 tonne of CO2 over its first 50 years. With the goal to be GREEN, our suggestion is donating some money for planting trees to compensate the carbon footprint.</string>
+    <string name="treenum">10</string>
+	<string name="no">No thanks</string>
+	<string name="yes">Donate $10!</string>
+	<string name="contact">Feel free to contact us if you have any question: sliu6@nd.edu, wzhang7@nd.edu</string>
+    <string name="server_url">http://192.168.72.128:3000</string>
+    <string name="address_prompt">Choose an Address</string>
+    <string-array name="address_array">
+        <item>Notre Dame</item>
+        <item>Walmart</item>
+        <item>Meijer</item>
+        <item>Martins</item>
+        <item>Airport</item>
+    </string-array>
+</resources>

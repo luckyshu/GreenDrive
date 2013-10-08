@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+	android:id="@+id/settings"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:scrollbars="none"
+    android:background="#FFF5F5F5">
+    
+        <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="fill_parent" 
+                android:layout_height="wrap_content"
+                android:paddingLeft="10dip"
+                android:paddingRight="10dip"
+                android:paddingBottom="10dip"
+				android:background="#FFF5F5F5">
+			<ImageView android:id="@+id/logo"
+			     android:layout_width="fill_parent" 
+			     android:layout_height="wrap_content"
+			     android:gravity="left"
+			     android:paddingLeft="20dip"
+			     android:paddingRight="20dip"
+			     android:src="@drawable/icon"
+			     android:scaleType="centerInside">
+			</ImageView>
+			<RelativeLayout android:layout_width="fill_parent" 
+    			android:layout_below="@+id/logo"
+                android:layout_height="fill_parent"
+                android:id="@+id/section1"> 
+				<TextView android:id="@+id/l_section1" 
+	              android:layout_width="fill_parent" 
+	              android:layout_height="wrap_content"
+	              android:text="Create an Account"
+	              style="@style/SectionHeader"/>  
+              	<RelativeLayout android:layout_width="wrap_content" 
+	    			android:layout_below="@id/l_section1"
+	                android:layout_height="wrap_content"
+	                android:id="@+id/emailWrapper"> 
+	                <TextView android:id="@+id/l_email" 
+	                	android:textColor="#444444"
+			            android:layout_width="fill_parent" 
+			            android:layout_height="wrap_content" 
+			            android:text="Email:"
+			            android:layout_below="@+id/emailWrapper"/>
+					<EditText android:id="@+id/email"
+						android:singleLine="true"
+						android:layout_width="fill_parent"
+						android:layout_height="wrap_content"
+					    android:minHeight="40dip"
+		                android:background="@android:drawable/editbox_background"
+		                android:layout_below="@id/l_email"/>
+		        </RelativeLayout>
+		        
+		        <RelativeLayout android:layout_width="wrap_content" 
+	    			android:layout_below="@id/emailWrapper"
+	                android:layout_height="wrap_content"
+	                android:id="@+id/phoneWrapper"> 
+			      	<TextView android:id="@+id/l_phone"
+			      		  android:textColor="#444444"
+			              android:layout_marginTop="10dip" 
+			              android:layout_width="fill_parent" 
+			              android:layout_height="wrap_content" 
+			              android:text="Phone:"
+			              android:layout_below="@+id/phoneWrapper"/>	              
+			    	<EditText android:id="@+id/phone" 
+			              android:layout_width="fill_parent" 
+			              android:layout_height="wrap_content"
+			              android:singleLine="true"
+			              android:minHeight="40dip" 
+			              android:layout_marginBottom="10dip"
+			              android:background="@android:drawable/editbox_background"
+			              android:layout_below="@id/l_phone"/>
+		        </RelativeLayout>
+		        
+		        <RelativeLayout android:layout_width="wrap_content" 
+	    			android:layout_below="@id/phoneWrapper"
+	                android:layout_height="wrap_content"
+	                android:id="@+id/passwordWrapper">
+			        <TextView android:id="@+id/l_password"
+			      		  android:textColor="#444444"
+			              android:layout_marginTop="10dip" 
+			              android:layout_width="fill_parent" 
+			              android:layout_height="wrap_content" 
+			              android:text="Password:"
+			              android:layout_below="@id/passwordWrapper"/>            
+			    	<EditText android:id="@+id/password" 
+			              android:layout_width="fill_parent" 
+			              android:layout_height="wrap_content"
+			              android:singleLine="true"
+			              android:minHeight="40dip" 
+			              android:layout_marginBottom="10dip"
+			              android:password="true"
+			              android:background="@android:drawable/editbox_background"
+			              android:layout_below="@id/l_password"/>
+		          </RelativeLayout>
+		          <RelativeLayout android:layout_width="wrap_content" 
+	    			android:layout_below="@id/passwordWrapper"
+	                android:layout_height="wrap_content"
+	                android:id="@+id/repassWrapper"> 
+			        <TextView android:id="@+id/l_confirm"
+			      		  android:textColor="#444444"
+			              android:layout_marginTop="10dip" 
+			              android:layout_width="fill_parent" 
+			              android:layout_height="wrap_content" 
+			              android:text="Confirmation:"
+			              android:layout_below="@id/repassWrapper"/>            
+			    	<EditText android:id="@+id/repass" 
+			              android:layout_width="fill_parent" 
+			              android:layout_height="wrap_content"
+			              android:singleLine="true"
+			              android:minHeight="40dip" 
+			              android:layout_marginBottom="10dip"
+			              android:password="true"
+			              android:background="@android:drawable/editbox_background"
+			              android:layout_below="@id/l_confirm"/>
+			    </RelativeLayout>
+			    
+			    <RelativeLayout android:layout_width="wrap_content" 
+	    			android:layout_below="@id/repassWrapper"
+	                android:layout_height="wrap_content"
+	                android:id="@+id/ispoolWrapper">
+	                <TextView android:id="@+id/l_ispool"
+			      		  android:textColor="#444444"
+			              android:layout_marginTop="10dip" 
+			              android:layout_width="fill_parent" 
+			              android:layout_height="wrap_content" 
+			              android:text="Car Pool?"
+			              android:layout_below="@id/ispoolWrapper"/> 
+					<RadioGroup android:layout_width="fill_parent"
+						android:layout_height="wrap_content"
+						android:orientation="horizontal"
+						android:id="@+id/QueGroup"
+						android:minHeight="40dip"
+						
+						android:layout_marginBottom="10dip"
+						android:layout_below="@id/l_ispool">
+						<RadioButton android:checked="true"
+						android:id="@+id/optionYes" android:text="YES" android:textColor="@color/darkgrey" android:textSize="12sp"/>
+						<RadioButton android:checked="false"
+						android:id="@+id/optionNo" android:text="NO" android:textColor="@color/darkgrey" android:textSize="12sp"/>
+					</RadioGroup>
+	            </RelativeLayout>
+	            
+	            <RelativeLayout android:layout_width="wrap_content" 
+	    			android:layout_below="@id/ispoolWrapper"
+	                android:layout_height="wrap_content"
+	                android:id="@+id/addressWrapper">
+	                 <TextView android:id="@+id/l_address"
+			      		  android:textColor="#444444"
+			              android:layout_marginTop="10dip" 
+			              android:layout_width="fill_parent" 
+			              android:layout_height="wrap_content" 
+			              android:text="Address:"
+			              android:layout_below="@id/addressWrapper"/>
+			         <Spinner android:id="@+id/address"
+						   android:layout_width="fill_parent"
+						   android:layout_height="wrap_content"
+						   android:minHeight="40dip"
+						   android:layout_marginBottom="10dip"
+						   android:prompt="@string/address_prompt" 
+						   android:layout_below="@id/l_address"/>
+	            </RelativeLayout>
+	            
+	          	<RelativeLayout android:layout_width="wrap_content" 
+	    			android:layout_below="@id/addressWrapper"
+	                android:layout_height="wrap_content"
+	                android:id="@+id/carWrapper">
+	                 <TextView android:id="@+id/l_car"
+			      		  android:textColor="#444444"
+			              android:layout_marginTop="10dip" 
+			              android:layout_width="fill_parent" 
+			              android:layout_height="wrap_content" 
+			              android:text="Car Fuel Comsumption (MPG):"
+			              android:layout_below="@id/carWrapper"/>
+			         <EditText android:id="@+id/car"
+						android:singleLine="true"
+						android:layout_width="fill_parent"
+						android:layout_height="wrap_content"
+					    android:minHeight="40dip"
+		                android:background="@android:drawable/editbox_background"
+		                android:layout_below="@id/l_car"/>
+	            </RelativeLayout>
+	            
+				<Button android:id="@+id/signup_button"
+			            android:layout_width="wrap_content"  
+			            android:layout_height="wrap_content"
+			            android:layout_below="@id/carWrapper"
+			            android:layout_alignParentRight="true"
+			            android:layout_marginLeft="10dip"
+			            android:text="Submit"
+			            android:shadowColor="#FFFFFF"
+			            android:shadowDx="0"
+			            android:shadowDy="1"
+			            android:shadowRadius="1"
+			            android:background="@drawable/button_small" />
+			 
+				<Button android:id="@+id/backbutton" 
+			     		android:layout_width="wrap_content"  
+			            android:layout_height="wrap_content"
+			            android:layout_alignTop="@id/signup_button"
+			            android:layout_toLeftOf="@id/signup_button"
+			            android:text="Cancel"
+			            android:background="@drawable/button_small" />
+		</RelativeLayout>
+	</RelativeLayout>
+</ScrollView>

@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="fill_parent" android:layout_height="fill_parent"
+	android:padding="0px" android:background="#e8e8e8" android:orientation="vertical">
+	
+	<com.markupartist.android.widget.ActionBar
+	    android:id="@+id/actionbar"
+	    style="@style/ActionBar"
+        />
+        
+<TextView
+	android:id="@+id/totalgas"
+	android:layout_width="330px"
+	android:layout_height="170px"
+	android:text="@string/totalgas"
+	android:layout_x="50px"
+	android:layout_y="22px"
+	android:textColor="@color/green"
+    android:textSize="16sp"
+    android:typeface="normal"
+    android:textStyle="bold"
+    android:gravity="center_vertical|left"
+>
+</TextView>
+
+<TextView
+	android:id="@+id/totaltree"
+	android:layout_width="330px"
+	android:layout_height="230px"
+	android:text="@string/totaltree"
+	android:layout_x="30px"
+	android:layout_y="240px"
+	android:textColor="@color/green"
+    android:textSize="16sp"
+    android:typeface="normal"
+    android:textStyle="bold"
+>
+</TextView>
+
+<TextView
+	android:id="@+id/contact"
+	android:layout_width="330px"
+	android:layout_height="50px"
+	android:text="@string/contact"
+
+	android:textColor="@color/green"
+    android:textSize="16sp"
+    android:typeface="normal"
+    android:textStyle="bold"
+>
+</TextView>
+</LinearLayout>

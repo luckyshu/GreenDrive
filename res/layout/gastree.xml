@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<AbsoluteLayout
+	android:layout_width="fill_parent"
+	android:layout_height="fill_parent"
+	android:background="@drawable/green"
+	xmlns:android="http://schemas.android.com/apk/res/android"
+>
+	<com.markupartist.android.widget.ActionBar
+	    android:id="@+id/actionbar"
+	    style="@style/ActionBar"
+        />
+<TextView
+	android:id="@+id/totalgas"
+	android:layout_width="310px"
+	android:layout_height="170px"
+	android:text="@string/gas"
+	android:layout_x="12px"
+	android:layout_y="45px"
+	android:textColor="@color/darkgreen"
+    android:textSize="16sp"
+    android:typeface="normal"
+    android:textStyle="bold"
+>
+</TextView>
+<TextView
+	android:id="@+id/gasnum"
+	android:layout_width="130px"
+	android:layout_height="50px"
+	android:text="@string/gasnum"
+	android:layout_x="100px"
+	android:layout_y="100px"
+	android:textColor="@color/black"
+    android:textSize="26sp"
+    android:typeface="normal"
+    android:textStyle="bold"
+>
+</TextView>
+<TextView
+	android:id="@+id/totaltree"
+	android:layout_width="305px"
+	android:layout_height="200px"
+	android:text="@string/tree"
+	android:layout_x="12px"
+	android:layout_y="140px"
+	android:textColor="@color/darkgreen"
+    android:textSize="16sp"
+    android:typeface="normal"
+    android:textStyle="bold"
+>
+</TextView>
+<TextView
+	android:id="@+id/treenum"
+	android:layout_width="130px"
+	android:layout_height="50px"
+	android:text="@string/treenum"
+	android:layout_x="100px"
+	android:layout_y="200px"
+	android:textColor="@color/black"
+    android:textSize="26sp"
+    android:typeface="normal"
+    android:textStyle="bold"
+>
+</TextView>
+<Button
+	android:id="@+id/no"
+	android:layout_width="145px"
+	android:layout_height="wrap_content"
+	android:layout_x="12px"
+	android:layout_y="300px"
+	android:text="@string/no"
+>
+</Button>
+<Button
+	android:id="@+id/yes"
+	android:layout_width="145px"
+	android:layout_height="wrap_content"
+	android:layout_x="161px"
+	android:layout_y="300px"
+	android:text="@string/yes"
+>
+</Button>
+</AbsoluteLayout>

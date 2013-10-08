@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<AbsoluteLayout
+	android:layout_width="fill_parent"
+	android:layout_height="fill_parent"
+	android:background="@drawable/car"
+	xmlns:android="http://schemas.android.com/apk/res/android"
+>
+
+<com.markupartist.android.widget.ActionBar
+   android:id="@+id/actionbar"
+   style="@style/ActionBar"
+/>
+
+<AnalogClock
+	android:layout_width="wrap_content"
+	android:layout_height="wrap_content"
+	android:layout_x="5px"
+	android:layout_y="55px"
+>
+</AnalogClock>
+<Button
+	android:id="@+id/daily"
+	android:layout_width="140px"
+	android:layout_height="45px"
+	android:background="@drawable/round_button"
+	android:text="@string/daily"
+	android:textSize="12sp"
+	android:textStyle="bold"
+	android:textColor="@color/white"
+	android:layout_x="165px"
+	android:layout_y="55px"
+>
+</Button>
+<Button
+	android:id="@+id/weekly"
+	android:layout_width="140px"
+	android:layout_height="45px"
+	android:background="@drawable/round_button"
+	android:text="@string/weekly"
+	android:textSize="12sp"
+	android:textStyle="bold"
+	android:textColor="@color/white"
+	android:layout_x="165px"
+	android:layout_y="105px"
+>
+</Button>
+<Button
+	android:id="@+id/monthly"
+	android:layout_width="140px"
+	android:layout_height="45px"
+	android:background="@drawable/round_button"
+	android:text="@string/monthly"
+	android:textSize="12sp"
+	android:textStyle="bold"
+	android:textColor="@color/white"
+	android:layout_x="165px"
+	android:layout_y="155px"
+>
+</Button> 
+<TextView
+	android:id="@+id/info"
+	android:layout_width="269px"
+	android:layout_height="116px"
+	android:text="@string/hello"
+	android:layout_x="25px"
+	android:layout_y="215px"
+	android:textColor="@color/green"
+    android:textSize="16sp"
+    android:typeface="sans"
+    android:textStyle="bold"
+>
+</TextView>
+<Button
+	android:id="@+id/begreen"
+	android:layout_width="270px"
+	android:layout_height="50px"
+	android:background="@drawable/round_button"
+	android:text="@string/begreen"
+	android:textSize="20sp"
+	android:textStyle="bold"
+	android:textColor="@color/darkgreen"
+	android:layout_x="25px"
+	android:layout_y="445px"
+>
+</Button> 
+</AbsoluteLayout>
